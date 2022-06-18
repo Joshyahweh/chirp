@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 body {
@@ -87,7 +87,7 @@ body {
 }
 
 .sec1 p {
-  margin-top: 15px;
+  padding-top: 15px;
   color: #5e5a5a;
   font-size: 20px;
 }
@@ -128,7 +128,6 @@ body {
 }
 .sec1-img {
   max-width: 400px;
-  /* width: 31%; */
   position: absolute;
   right: 200px;
   top: 150px;
@@ -141,7 +140,7 @@ body {
   font-weight: 700;
 }
 .sec2 {
-  margin: 90px 150px;
+  padding: 90px 150px;
 }
 .sec2 h2 {
   font-size: 30px;
@@ -179,6 +178,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-sizing: border-box;
 }
 .sara-top {
   display: flex;
@@ -243,17 +243,17 @@ body {
 }
 .num-likes {
   position: relative;
-  right: 55px;
+  right: 80px;
   font-size: 20px;
 }
 .num-likes-2 {
   position: relative;
-  right: 50px;
+  right: 100px;
   font-size: 20px;
 }
 .num-likes-3 {
   position: relative;
-  right: 40px;
+  right: 65px;
   font-size: 20px;
 }
 .sec4 {
@@ -287,7 +287,7 @@ body {
 .month {
   color: #5e5a5a;
   position: absolute;
-  top: 2409px;
+  top: 2405gitpx;
   left: 600px;
   font-size: 25px;
 }
@@ -296,6 +296,15 @@ body {
   align-items: center;
   padding-top: 15px;
 }
+.check-top {
+  border-top: 2px solid #c3c3c3;
+  margin-top: 20px;
+}
+.check-bottom {
+  border-bottom: 2px solid #c3c3c3;
+  padding-bottom: 20px;
+}
+
 .price-text-container p {
   padding-left: 10px;
   color: #5e5a5a;
@@ -341,4 +350,215 @@ body {
 }
 .footer-right a:hover {
   color: #1da1f2;
+}
+@media (max-width: 700px) {
+  body {
+    font-family: 'popins', sans-serif;
+    cursor: default;
+  }
+  .header-container {
+    padding: 20px 15px;
+  }
+
+  .sec1-img {
+    max-width: 350px;
+    position: absolute;
+    right: 30px;
+  }
+  .sec1 h1 {
+    font-size: 26px;
+    line-height: 35px;
+    padding-top: 500px;
+  }
+  .sec1 p {
+    color: #5e5a5a;
+    font-size: 18px;
+  }
+  .sec1 {
+    padding: 150px 18px 0;
+    background: #fbf8f3;
+  }
+  .header-twitter-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1da1f2;
+    padding: 20px 40px;
+    border-radius: 12px;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+    font-size: 11px;
+    position: relative;
+    left: 50px;
+    margin-top: 0px;
+  }
+  .header-btn {
+    display: none;
+  }
+  .header-twitter-action:hover {
+    background: #d7f5f5;
+    color: #1da1f2;
+  }
+  .learn-more {
+    text-decoration: none;
+    color: #1f7898;
+    padding-left: 15px;
+    padding-top: 120px;
+    transition: 0.5s;
+    position: relative;
+    right: 150px;
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 0px;
+  }
+  .learn-more:hover {
+    color: #1da1f2;
+  }
+  .join {
+    padding-bottom: 50px;
+  }
+  .avatar {
+    position: relative;
+    left: 90px;
+  }
+  .sec2 {
+    padding: 90px 18px;
+  }
+  .sec2 h2 {
+    font-size: 30px;
+  }
+  .feature-1-container {
+    display: block;
+    justify-content: space-between;
+  }
+  .feature-2-container {
+    display: block;
+    justify-content: space-between;
+  }
+  .sec3 {
+    padding: 90px 18px;
+  }
+  .sec3 h2 {
+    font-size: 30px;
+  }
+  .customers {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .sara-container {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .jack-container {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .jessica-container {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .num-likes {
+    position: relative;
+    right: 80px;
+    font-size: 20px;
+  }
+  .num-likes-2 {
+    position: relative;
+    right: 70px;
+    font-size: 20px;
+  }
+  .num-likes-3 {
+    position: relative;
+    right: 70px;
+    font-size: 20px;
+  }
+  .sec4 {
+    padding: 100px 18px;
+  }
+  .hero-text {
+    padding: 0 20px;
+    font-size: 35px;
+    text-align: center;
+  }
+  .sec4-parag1 {
+    text-align: center;
+    padding: 20px 20px;
+    color: #5e5a5a;
+    font-size: 20px;
+  }
+  .check-top {
+    border-top: 2px solid #c3c3c3;
+    margin-top: 20px;
+  }
+  .check-bottom {
+    border-bottom: 2px solid #c3c3c3;
+    padding-bottom: 20px;
+  }
+  .price-plan {
+    padding: 40px;
+    background: #fbf8f3;
+    border: 2px solid #ffb12e;
+    border-radius: 5px;
+    margin-top: 70px;
+  }
+  .price-plan h3 {
+    font-weight: 500;
+    color: #5e5a5a;
+    font-size: 27px;
+  }
+  .price-plan h2 {
+    font-size: 50px;
+  }
+  .month {
+    color: #5e5a5a;
+    position: absolute;
+    top: 4345px;
+    left: 120px;
+    font-size: 25px;
+  }
+  .price-text-container {
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+  }
+  .price-text-container p {
+    padding-left: 10px;
+    color: #5e5a5a;
+  }
+  .sec4-active-btn {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1da1f2;
+    padding: 20px 40px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .sec4-active-btn:hover {
+    background-color: #d7f5f5;
+    color: #1da1f2;
+  }
+  .sec4-active-btn p {
+    padding-left: 15px;
+  }
+  .footer {
+    background-color: #d7f5f5;
+    display: block;
+    justify-content: space-between;
+    padding: 30px 15px;
+    align-items: center;
+  }
+  .footer-right a {
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+    font-size: 20px;
+    transition: 0.5s;
+  }
 }
